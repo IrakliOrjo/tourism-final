@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+    /* Button styles */
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow-icon {
+    display: inline-block;
+    opacity: 0;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    margin-left: -.8rem;
+}
+
+button:hover{
+    opacity: 0.9;
+    transform: translateX(1%);
+}
+
+button:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(100%);
+    animation: left-to-right 1s ease-in-out;
+    margin-left: 0;
+}
+
+/* @keyframes left-to-right {
+    0% {
+        margin-left: -0.1;
+    }
+    50% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 0.1rem;
+    }
+}  */
+
+ 
+
+ 
